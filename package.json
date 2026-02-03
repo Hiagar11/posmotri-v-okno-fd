@@ -1,0 +1,42 @@
+{
+  "name": "posmotri-v-okno-fd",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Hiagar11/posmotri-v-okno-fd#readme",
+  "bugs": {
+    "url": "https://github.com/Hiagar11/posmotri-v-okno-fd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiagar11/posmotri-v-okno-fd.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-html": "^8.1.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ]
+  }
+}

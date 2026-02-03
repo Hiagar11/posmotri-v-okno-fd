@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+.cache/
+.vscode/
+coverage/
+*.min.js
+*.bundle.js
+*.map
+README.md
+package-lock.json
