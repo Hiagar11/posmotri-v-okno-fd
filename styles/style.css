@@ -1,7 +1,13 @@
+:root {
+  --debug: 1px dashed red;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: var(--debug);
+  outline-offset: -1px;
 }
 
 html {
@@ -16,6 +22,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -48,4 +57,30 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  inline-size: 1140px;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__details {
+  block-size: 534px;
+  inline-size: 399px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.content__list-container {
+  block-size: 298px;
+  overflow-y: scroll;
 }
